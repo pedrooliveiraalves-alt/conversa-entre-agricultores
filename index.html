@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌱 Fazenda Sustentável</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌱 Fazenda Sustentável</h1>
+      <p>Gerencie sua plantação ecológica e seja um fazendeiro sustentável!</p>
+    </header>
 
+    <div class="stats">
+      <div>Dinheiro: <span id="dinheiro">R$ 250</span></div>
+      <div>Água: <span id="agua">100</span>/100</div>
+      <div>Saúde do Solo: <span id="solo">85</span>%</div>
+      <div>Sustentabilidade: <span id="sustentabilidade">70</span>%</div>
+      <div>Temporada: <span id="temporada">1</span></div>
+    </div>
+
+    <div class="farm-grid" id="farmGrid"></div>
+
+    <div class="actions">
+      <h2>Ações</h2>
+      <button onclick="plantar(0)">🌾 Milho (R$30)</button>
+      <button onclick="plantar(1)">🥕 Cenoura (R$25)</button>
+      <button onclick="plantar(2)">🥦 Brócolis (R$40)</button>
+      <button onclick="irrigar()">💧 Irrigar (+25)</button>
+      <button onclick="adubar()">🌿 Adubar Orgânico</button>
+      <button onclick="proximaTemporada()">⏭ Próxima Temporada</button>
+    </div>
+
+    <div class="log" id="log"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
